@@ -28,21 +28,52 @@ nav{
 nav li{
     display: inline;
     text-transform: uppercase;
-    text-decoration: none;
     color: rgb(192, 192, 192);
+    padding-right: 10px;
+}
+
+nav li:hover{
+    text-decoration: underline;
 }
 
 .logo img{
     height: 60px;
 }
 
-header .bottom{
-    background-color: gold;
-    height: 120px;
+.banner{
+    background-image: url(../img/banner.jpg);
+    border-radius: 10px;
+    height: 550px;
+    margin-bottom: 20px;
+}
+
+.testobanner{
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    padding-left: 50px;
+    width: 550px;
+}
+
+header{
+    position: relative
+}
+
+#testobannermaiuscolo{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#testotitolosecondario{
+    display: block;
+    color: rgb(192, 192, 192)
+}
+
+.corpo{
+    margin: 25px 0;
 }
 
 main{
-    background-color: blue;
 }
 
 main .top{
@@ -73,8 +104,12 @@ main .top{
     height: 180px;
 }
 
-footer{
-    background-color:darkmagenta ;
-    height: 60px;
-    margin-top: 10px;
+.piedipagina{
+    text-align: center;
+    margin-top: 20px;
+    height: 10px;
+}
+
+#cuorerosso{
+    color: red;
 }
