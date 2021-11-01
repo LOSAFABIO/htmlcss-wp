@@ -9,6 +9,15 @@ body{
     font-weight: 300;
 }
 
+.clearfix1::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.clearfix1{
+    height: 400px;
+}
+
 .clearfix::after{
     content:"";
     display: table;
@@ -30,6 +39,8 @@ nav li{
     text-transform: uppercase;
     color: rgb(192, 192, 192);
     padding-right: 10px;
+    font-family: Montserrat;
+
 }
 
 nav li:hover{
@@ -41,16 +52,19 @@ nav li:hover{
 }
 
 .banner{
-    background-image: url(../img/banner.jpg);
+    background-image: 
+    url(../img/banner.jpg);
+    box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .3);
     border-radius: 10px;
-    height: 550px;
+    height: 450px;
     margin-bottom: 20px;
+    background-position: center;
 }
 
 .testobanner{
     color: white;
     position: absolute;
-    bottom: 50px;
+    bottom: 70px;
     padding-left: 50px;
     width: 550px;
 }
@@ -64,45 +78,85 @@ header{
     font-size: 20px;
 }
 
+.titolosecondario{
+    font:bold;
+}
+
 #testotitolosecondario{
     display: block;
-    color: rgb(192, 192, 192)
+    color: rgb(192, 192, 192);
+    font-family: Montserrat;
+
 }
 
 .corpo{
     margin: 25px 0;
 }
 
-main{
-}
-
 main .top{
     height: 60px;
 }  
 
-.bgc{
-    background-color: cyan;
-
+p,h3{ 
+    margin-bottom: 20px;
+    bottom: 200px;
+    height: auto;
 }
+
 .col{
+    border: solid 0 ;
     float: left;
     margin: 10px 0;
     height: 180px;
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    border-radius: 5px;
+
 }
 
-.colx,
+.colx,.colrx,.colcx{
+    background-color: #d8dee9;
+}
+
+.colx{
+    width: 20%;
+    background-image: url(../img/img-1.jpg);
+}
+
 .colrx{
     width: 20%;
+    background-image: url(../img/img-3.jpg);
 }
 
 .colcx{
     width: 60%;
     padding: 0 10px;
+    background-image: url(../img/banner-2.jpg);
 }
  
 .col div{
     height: 180px;
 }
+
+.colx2{
+    width: 20%;
+}
+
+.colrx2{
+    width: 20%;
+}
+
+.colcx2{
+    width: 60%;
+    padding: 0 10px;
+}
+
+.colx2,.colrx2,.colcx2{
+    font-family: Montserrat;
+
+}
+
 
 .piedipagina{
     text-align: center;
